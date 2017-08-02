@@ -1,0 +1,21 @@
+<h2>Repositories</h2>
+<div class="sort">
+  <button (click)="sortRepoes(false)">A-Z</button>
+  <button (click)="sortRepoes(true)">Z-A</button>
+  <select (change)="filterByLanguage($event.target.value)">
+    <option *ngFor="let language of languages">{{language}}</option>
+  </select>
+</div>
+<ul class="repoes">
+  <li *ngFor="let repo of repoes" [hidden]="!repo.isVisible"
+
+      (click)="gotoIssues(repo)">
+    <input class="badge" (click)="$event.stopPropagation()" [(ngModel)]="repo.name" type="text" [disabled]="!repo.isEditable">
+    <input class="language" (click)="$event.stopPropagation()" [(ngModel)]="repo.language" type="text" [disabled]="!repo.isEditable">
+    <input class="description" (click)="$event.stopPropagation()" [(ngModel)]="repo.description" type="text" [disabled]="!repo.isEditable">
+    <button class="delete"(click)="delete(repo); $event.stopPropagation()">X</button>
+    <button class="update" (click)="changeEditable(repo); $event.stopPropagation()">U</button>
+    <button class="detail"(click)="gotoDetail(repo); $event.stopPropagation()">D</button>
+  </li>
+</ul>
+

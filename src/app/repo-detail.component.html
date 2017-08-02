@@ -1,0 +1,17 @@
+<div *ngIf="repo">
+  <h2>{{repo.name}} details!</h2>
+  <div><label>id: </label>{{repo.id}}</div>
+  <div>
+    <label>name: </label>
+    <span>{{repo.name}}</span>
+  </div>
+  <div>
+    <label>description: </label>
+    <span>{{repo.description}}</span>
+  </div>
+  <div>
+    <label>language: </label>
+    <span>{{repo.language}}</span>
+  </div>
+  <button (click)="goBack()">Back</button>
+</div>

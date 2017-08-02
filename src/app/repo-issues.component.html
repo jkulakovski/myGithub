@@ -1,0 +1,17 @@
+<h2>Issues</h2>
+<div>
+  <label>Enter issue:</label> <input [(ngModel)]="newIssueBody" #repoName />
+  <button class="addIssue" (click)="createIssue()" [disabled]="!newIssueBody">Add</button>
+</div>
+<ul>
+  <li *ngFor="let issue of issues">
+    <span>{{issue.body || 'no issue your body'}}</span>
+    <ul>
+      <li *ngFor="let comment of issue.comments">
+        <span>Comment: {{comment}}</span>
+      </li>
+    </ul>
+    <input [(ngModel)]="issue.newComment">
+    <button class="addComment" (click)="addNewComment(issue)" [disabled]="!issue.newComment">Add comment</button>
+  </li>
+</ul>

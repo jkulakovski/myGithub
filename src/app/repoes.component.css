@@ -1,0 +1,126 @@
+
+.repoes {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 15em;
+}
+.repoes li {
+  width: 1230px;
+  cursor: pointer;
+  position: relative;
+  left: 0;
+  background-color: #f8f8f8;
+  margin: .5em;
+  padding: .3em 0;
+  height: 2.3em;
+  border-radius: 4px;
+}
+.repoes li.selected:hover {
+  background-color: #BBD8DC !important;
+  color: white;
+}
+.repoes li:hover {
+  color: #607D8B;
+  background-color: #DDD;
+  left: .1em;
+}
+.repoes .text {
+  position: relative;
+  top: -3px;
+}
+.repoes .badge {
+  display: inline-block;
+  font-size: small;
+  color: white;
+  padding: 0.8em 0.7em 0.7em 0.7em;
+  background-color: #607D8B;
+  line-height: 1em;
+  position: relative;
+  left: -1px;
+  top: -5px;
+  height: 1.8em;
+  width: 235px;
+  margin-right: .8em;
+  border-radius: 10px 10px 10px 10px;
+}
+
+button.delete  {
+  float:right;
+  margin-top: 2px;
+  margin-right: .8em;
+  background-color: #b50b01 !important;
+  color:white;
+  border-radius: 4px 4px 4px 4px;
+}
+
+button.update {
+  float:right;
+  margin-top: 2px;
+  margin-right: .8em;
+  background-color: #b1ae3b !important;
+  color:white;
+  border-radius: 4px 4px 4px 4px;
+}
+
+button.detail {
+  float:right;
+  margin-top: 2px;
+  margin-right: .8em;
+  background-color: #b14272 !important;
+  color:white;
+  border-radius: 4px 4px 4px 4px;
+}
+
+.language  {
+  display: inline-block;
+  font-size: small;
+  color: white;
+  text-align: center;
+  padding: 0.8em 0.7em 0.7em 0.7em;
+  background-color: #3e8b41;
+  line-height: 1em;
+  position: relative;
+  left: -1px;
+  top: -5px;
+  height: 1.8em;
+  width: 102px;
+  margin-right: .8em;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.description {
+  display: inline-block;
+  font-size: inherit;
+  color: white;
+  text-align: center;
+  padding: 0.4em 0.4em 0.4em 0.4em;
+  background-color: rgba(140, 140, 133, 0.46);
+  line-height: 1em;
+  position: relative;
+  left: -1px;
+  top: -5px;
+  height: 1.8em;
+  width: 670px;
+  margin-right: .8em;
+  border-radius: 30px 30px 30px 30px;
+}
+
+.sort select {
+  color: white;
+  font-size: inherit;
+  border-radius: 4px 4px 4px 4px ;
+  background-color: #3e8b41;
+  padding: 0.8em 0.7em 0.7em 0.7em;
+  margin: .8em .8em;
+  outline:none;
+}
+
+.sort button {
+  color: white;
+  border-radius: 4px 4px 4px 4px ;
+  padding: 0.8em 0.7em 0.7em 0.7em;
+  background-color: #607D8B;
+  margin: .8em .5em;
+}
+
